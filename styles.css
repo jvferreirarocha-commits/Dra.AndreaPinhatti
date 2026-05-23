@@ -290,15 +290,16 @@ button {
   background-image: url("assets/images/hero.jpg");
   background-size: cover;
   background-position: right top;
-  transform: scale(1.015);
+  filter: contrast(1.045) saturate(1.025);
+  transform: scale(1.01);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(250, 247, 242, 0.94) 0%, rgba(250, 247, 242, 0.72) 34%, rgba(250, 247, 242, 0.2) 63%, rgba(250, 247, 242, 0.05) 100%),
-    linear-gradient(0deg, rgba(248, 244, 238, 0.75), rgba(248, 244, 238, 0) 24%);
+    linear-gradient(90deg, rgba(248, 242, 234, 0.68) 0%, rgba(248, 242, 234, 0.42) 30%, rgba(248, 242, 234, 0.12) 51%, rgba(248, 242, 234, 0.02) 68%, transparent 100%),
+    linear-gradient(0deg, rgba(242, 232, 219, 0.28), transparent 22%);
 }
 
 .hero-content {
@@ -325,6 +326,17 @@ button {
   color: var(--gray-deep);
   font-size: clamp(1.05rem, 2vw, 1.35rem);
   text-shadow: 0 1px 16px rgba(255, 255, 255, 0.84);
+}
+
+.hero .btn {
+  background: var(--blue-deep);
+  border-color: rgba(197, 167, 125, 0.52);
+  box-shadow: 0 16px 34px rgba(34, 50, 69, 0.26);
+}
+
+.hero .btn:hover {
+  background: #304f79;
+  box-shadow: 0 20px 42px rgba(34, 50, 69, 0.32);
 }
 
 .two-col {
@@ -1334,12 +1346,13 @@ button {
 
   .hero-bg {
     background-position: 72% top;
+    filter: contrast(1.05) saturate(1.025);
   }
 
   .hero-overlay {
     background:
-      linear-gradient(180deg, rgba(250, 247, 242, 0.38), rgba(250, 247, 242, 0.9) 56%, rgba(250, 247, 242, 0.98) 100%),
-      linear-gradient(90deg, rgba(250, 247, 242, 0.8), rgba(250, 247, 242, 0.12));
+      linear-gradient(180deg, rgba(248, 242, 234, 0.08) 0%, rgba(248, 242, 234, 0.1) 32%, rgba(248, 242, 234, 0.62) 58%, rgba(248, 242, 234, 0.94) 100%),
+      linear-gradient(90deg, rgba(248, 242, 234, 0.16), transparent 66%);
   }
 
   .hero-content {
