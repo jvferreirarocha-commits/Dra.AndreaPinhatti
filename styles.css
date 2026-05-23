@@ -1430,13 +1430,23 @@ button {
 
   .why::before {
     background:
-      linear-gradient(180deg, rgba(247, 249, 252, 0.46), rgba(247, 249, 252, 0.82) 36%, rgba(247, 249, 252, 0.94) 100%),
-      linear-gradient(90deg, rgba(247, 249, 252, 0.1), rgba(247, 249, 252, 0.78));
+      linear-gradient(180deg, rgba(247, 249, 252, 0.18), rgba(247, 249, 252, 0.5) 42%, rgba(247, 249, 252, 0.72) 100%),
+      linear-gradient(90deg, rgba(247, 249, 252, 0.04), rgba(247, 249, 252, 0.42));
   }
 
   .why-bg {
-    opacity: 0.46;
-    object-position: 42% top;
+    opacity: 0.72;
+    object-position: 8% top;
+  }
+
+  .why-copy h2,
+  .why-copy p {
+    text-shadow: 0 1px 16px rgba(255, 255, 255, 0.72);
+  }
+
+  .reason-card {
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(7px);
   }
 
   .faq-image {
