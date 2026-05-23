@@ -284,7 +284,7 @@ button {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("assets/images/hero.png");
+  background-image: url("assets/images/hero.jpg");
   background-size: cover;
   background-position: right top;
   transform: scale(1.015);
