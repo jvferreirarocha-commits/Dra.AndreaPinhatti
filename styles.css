@@ -528,6 +528,20 @@ button {
     linear-gradient(180deg, var(--off-white), var(--white) 54%, var(--sand));
 }
 
+.procedures {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(239, 226, 209, 0.58), transparent 34%),
+    linear-gradient(180deg, #f4efe8 0%, #f3eee7 48%, #efe5d8 100%);
+}
+
+.procedures .section-head h2 {
+  color: var(--blue-deep);
+}
+
+.procedures .section-head p:not(.eyebrow) {
+  color: #6f675f;
+}
+
 .benefits {
   padding: 72px 0 58px;
   background:
@@ -735,10 +749,12 @@ button {
   display: grid;
   gap: 24px;
   padding: clamp(20px, 3vw, 36px);
-  border: 1px solid var(--line);
+  border: 1px solid #e7dccf;
   border-radius: var(--radius);
-  background: var(--white);
-  box-shadow: 0 24px 62px rgba(72, 58, 43, 0.09);
+  background:
+    linear-gradient(135deg, rgba(255, 252, 247, 0.98), rgba(251, 246, 239, 0.98)),
+    #fffcf7;
+  box-shadow: 0 24px 62px rgba(61, 46, 35, 0.08);
   opacity: 0.6;
   transform: scale(0.965);
   transform-origin: center top;
@@ -752,8 +768,8 @@ button {
 .procedure-block.is-active {
   opacity: 1;
   transform: scale(1);
-  border-color: rgba(197, 167, 125, 0.54);
-  box-shadow: 0 34px 78px rgba(72, 58, 43, 0.14);
+  border-color: rgba(200, 169, 106, 0.58);
+  box-shadow: 0 34px 78px rgba(61, 46, 35, 0.12);
 }
 
 .procedure-item {
@@ -768,8 +784,9 @@ button {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
+  border: 1px solid rgba(231, 220, 207, 0.84);
   border-radius: var(--radius);
-  box-shadow: 0 12px 32px rgba(72, 58, 43, 0.11);
+  box-shadow: 0 12px 32px rgba(61, 46, 35, 0.1);
 }
 
 .procedure-item span,
@@ -782,7 +799,7 @@ button {
   margin-bottom: 10px;
   border-radius: 999px;
   color: var(--blue-deep);
-  background: var(--champagne-soft);
+  background: #efe2d1;
   font-size: 0.74rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -796,6 +813,10 @@ button {
   line-height: 1.18;
 }
 
+.procedures .procedure-item h3 {
+  color: var(--blue-deep);
+}
+
 .procedure-item p,
 .reason-card p {
   margin: 0;
@@ -803,9 +824,18 @@ button {
   font-size: 0.98rem;
 }
 
+.procedures .procedure-item p {
+  color: #6f675f;
+}
+
 .procedure-divider {
   height: 1px;
-  background: linear-gradient(90deg, rgba(197, 167, 125, 0), rgba(197, 167, 125, 0.48), rgba(197, 167, 125, 0));
+  background: linear-gradient(90deg, rgba(200, 169, 106, 0), rgba(200, 169, 106, 0.46), rgba(200, 169, 106, 0));
+}
+
+.procedures .btn {
+  border-color: rgba(200, 169, 106, 0.48);
+  box-shadow: 0 16px 36px rgba(61, 46, 35, 0.12);
 }
 
 .why {
