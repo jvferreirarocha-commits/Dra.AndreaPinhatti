@@ -897,7 +897,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
   gap: clamp(34px, 6vw, 78px);
-  align-items: center;
+  align-items: stretch;
 }
 
 .office {
@@ -931,6 +931,9 @@ button {
 }
 
 .office-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 560px;
 }
 
@@ -956,28 +959,39 @@ button {
 .office-features {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin: 28px 0 30px;
+  gap: 16px;
+  margin: 34px 0 34px;
 }
 
 .office-feature {
+  position: relative;
   display: flex;
-  gap: 12px;
+  gap: 14px;
   align-items: center;
-  min-height: 74px;
-  padding: 14px;
+  min-height: 104px;
+  overflow: hidden;
+  padding: 20px 18px;
   color: var(--ink);
-  border: 1px solid rgba(197, 167, 125, 0.36);
+  border: 1px solid rgba(197, 167, 125, 0.48);
   border-radius: var(--radius);
-  background: var(--white);
-  box-shadow: 0 16px 34px rgba(24, 42, 62, 0.16);
+  background: linear-gradient(135deg, var(--white), var(--off-white));
+  box-shadow: 0 20px 42px rgba(24, 42, 62, 0.2);
+}
+
+.office-feature::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px 0;
+  height: 3px;
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(90deg, rgba(197, 167, 125, 0.72), rgba(239, 226, 209, 0.2));
 }
 
 .office-feature span {
   display: grid;
-  flex: 0 0 38px;
-  width: 38px;
-  height: 38px;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
   place-items: center;
   border-radius: 999px;
   color: var(--blue-deep);
@@ -988,8 +1002,8 @@ button {
 }
 
 .office-feature strong {
-  font-size: 0.95rem;
-  line-height: 1.22;
+  font-size: 1rem;
+  line-height: 1.24;
 }
 
 .office .btn {
@@ -1369,6 +1383,7 @@ button {
   }
 
   .office-copy {
+    display: block;
     max-width: 760px;
   }
 
